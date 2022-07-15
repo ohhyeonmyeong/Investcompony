@@ -1,0 +1,64 @@
+*{box-sizing: border-box; font-family: 'Stem';}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+#register{height: 800px;}
+#register .wrap{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register .wrap form{}
+#register .wrap form .register_box{
+    width: 700px;
+    border: 3px solid #4c889c;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+#register .wrap form .register_box h3{
+    width: 100%;
+    padding: 20px;
+    background-color: #4c889c;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+#register .wrap form .register_box div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px 20px;
+}
+#register .wrap form .register_box .name{padding-top: 20px;}
+#register .wrap form .register_box label{font-size: 18px; line-height: 38px;}
+#register .wrap form .register_box input{
+    width: 330px;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 14px;
+    outline-color: #4c889c;
+}
+
+#register .wrap form .register_box .join_btn{margin-top: 20px;}
+#register .wrap form .register_box .join_btn button{
+    margin: 0 auto;
+    width: 180px;
+    height: 38px;
+    background-color: #4c889c;
+    font-size: 17px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+#register .wrap form .register_box .join_btn button:hover{
+    background-color: #1a667a;
+    transition: background-color 0.5s;
+}

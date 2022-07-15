@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/*12 Grid Line*/
+
+/*
+
+#grid_12{
+    position: fixed;
+    width: 1200px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1;
+}
+#grid_12 div{
+    width: 80px;
+    height: 100%;
+    margin: 0 10px;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+*/
+
+*{box-sizing: border-box; font-family: 'Stem';}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+/* main */
+
+main{
+    height: 760px;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+main .cloud{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cloud.png);
+    background-position: 0% 130%;
+    background-repeat: no-repeat;
+    animation: 180s moveCloud infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes moveCloud{
+    0%{background-position: 0% 130%;}
+    50%{background-position: 100% 130%;}
+    100%{background-position: 0% 130%;}
+}
+
+main .cloud .title{text-align: center; color: #fff; font-weight: 700;}
+main .cloud .title p{font-size: 18px;}
+main .cloud .title h3{font-size: 37px; padding: 20px 0; line-height: 34px;} 
+main .cloud .title .button{display: flex; padding: 38px 0;}
+main .cloud .title .button a{
+    width: 160px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: #5e889e;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+main .cloud .title .button a:hover{background-color: #999; color: #755562;}
+
+/* section 1 */
+
+section .cont{padding-bottom: 50px;}
+
+section .cont .wrap{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    /* background-color: #faa; */
+}
+
+section .cont .wrap .cont_box{
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;
+    height: 260px;
+}
+
+section .cont .wrap .cont_box .img_part{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .cont .wrap .cont_box .img_part img{width: 130px; height: 98px;}
+
+section .cont .wrap .cont_box .txt_part{color: #5c5c5c;}
+section .cont .wrap .cont_box .txt_part h4{font-size: 17px; padding-bottom: 16px;}
+section .cont .wrap .cont_box .txt_part p{font-size: 14px;}
+
+/* section 2 */
+
+#sec2{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../img/Investment-Performance-Banner-650.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+} 
+
+#sec2 .dark{width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+
+#sec2 .wrap{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec2 .wrap .title{text-align: center;}
+#sec2 .wrap .title h4{font-size: 24px; color: #fff; padding-bottom: 20px;}
+#sec2 .wrap .title a{font-size: 14px; color: #5e889e;}
+#sec2 .wrap .title a:hover{color: #3d006a;}
+
+/* section 3 */
+
+#sec3{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/main2-bg.png);
+}
+#sec3 .wrap{
+    width: 1200px;
+    padding: 80px 0;
+    margin: 0 auto;
+    /* background-color: #afa; */
+}
+
+#sec3 .wrap .title{text-align: center;}
+#sec3 .wrap .title h3{font-size: 36px; color: #5e889e; padding-bottom: 40px;}
+
+#sec3 .wrap .cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#sec3 .wrap .cont .cont_box{
+    width: calc(25% - 20px);
+    height: 420px;
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#sec3 .wrap .cont .cont_box:hover{
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 1);
+    transition: box-shadow 0.7s, scale 0.7s;
+}
+
+#sec3 .wrap .cont .cont_box .image_part{
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#sec3 .wrap .cont .cont_box:hover .image_part{transform: scale(1.01); transition: transform 0.5s;}
+
+
+#sec3 .wrap .cont .cont_box:nth-child(1) .image_part{background-image: url(../img/invest-01.jpg);}
+#sec3 .wrap .cont .cont_box:nth-child(2) .image_part{background-image: url(../img/invest-02.jpg);}
+#sec3 .wrap .cont .cont_box:nth-child(3) .image_part{background-image: url(../img/invest-03.jpg);}
+#sec3 .wrap .cont .cont_box:nth-child(4) .image_part{background-image: url(../img/invest-04.jpg);}
+
+#sec3 .wrap .cont .cont_box .text_part{padding-top: 40px; color: #5c5c5c;}
+#sec3 .wrap .cont .cont_box .text_part h4{font-size: 18px; padding-bottom: 10px;}
+#sec3 .wrap .cont .cont_box .text_part p{font-size: 14px;}
+
+#sec3 .wrap .cont .cont_box .btn{}
+#sec3 .wrap .cont .cont_box .btn img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+#sec3 .wrap .cont .cont_box .btn img:hover{color: #fff;};
+
+#sec3 .wrap .banner{width: 100%; padding: 0 10px;}
+#sec3 .wrap .banner img{display: block; width: 100%;}
+
+/* section 4 */
+
+#sec4{
+    height: 430px;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-image: url(../img/quick-enquiry.jpg);
+}
+#sec4 .blue{width: 100%; height: 100%; background-color: rgba(94, 136, 154, 0.5);}
+#sec4 .blue .wrap{
+    width: 1200px;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding: 60px 0 80px;
+}
+
+#sec4 .blue .wrap .title{padding-bottom: 40px; text-align: center;}
+#sec4 .blue .wrap h3{font-size: 36px; color: #fff;}
+
+#sec4 .blue .wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#sec4 .blue .wrap ul li{margin: 0 10px 20px;}
+#sec4 .blue .wrap ul li a{}
+#sec4 .blue .wrap ul li a img{width: 180px; height: 100px;}

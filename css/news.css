@@ -1,0 +1,61 @@
+*{box-sizing: border-box; font-family: 'Stem';}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+section{height: 945px;}
+section .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #aae; */
+}
+section .wrap h3{
+    font-size: 24px;
+    color: #5c5c5c;
+    text-align: center;
+}
+
+section .wrap .cont{
+    width: calc(100% / 12 * 10 - 20px);
+    margin: 40px 0 60px;
+    /* background-color: #aaa; */
+}
+section .wrap .cont .box{
+    padding: 20px 0;
+    /* background-color: #ffd; */
+    height: calc(20%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #4c4c4c;
+}
+section .wrap .cont .box:last-child{border-bottom: 1px solid #4c4c4c;}
+
+section .wrap .cont .box .img_part{
+    width: 280px;
+    height: 125px;
+    /* background-color: #aaf; */
+    margin-right: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 4px;
+}
+
+section .wrap .cont .box .txt_prat{width: 680px;margin-left: 10px;}
+
+section .wrap .cont .box .txt_prat h4{font-size: 17px; color: #5e889e; line-height: 15px; padding-bottom: 20px;}
+section .wrap .cont .box .txt_prat p{font-size: 14px; padding-bottom: 20px;}
+section .wrap .cont .box .txt_prat span{
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    line-height: 12px;
+}
